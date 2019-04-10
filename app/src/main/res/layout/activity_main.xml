@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/name_game"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btneasy"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/height"
+            android:layout_gravity="center"
+            android:background="@drawable/main_btn"
+            android:fontFamily="@font/impact_regular"
+            android:onClick="onClickEasy"
+            android:text="@string/easy"
+            android:textColor="#BCCD00"
+            android:textSize="@dimen/size" />
+
+        <Button
+            android:id="@+id/btnnormal"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/height"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/main_btn"
+            android:fontFamily="@font/impact_regular"
+            android:onClick="onClickNormal"
+            android:text="@string/normal"
+            android:textColor="#95D800"
+            android:textSize="@dimen/size" />
+
+        <Button
+            android:id="@+id/btnhard"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/height"
+            android:layout_gravity="center"
+            android:background="@drawable/main_btn"
+            android:fontFamily="@font/impact_regular"
+            android:onClick="onClickHard"
+            android:text="@string/hard"
+            android:textColor="#6FE200"
+            android:textSize="@dimen/size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:padding="8dp"
+        >
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="@dimen/diameter"
+                android:layout_height="@dimen/diameter"
+                android:src="@drawable/setting"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:padding="2dp"
+                android:onClick="onClickSetting" />
+
+            <ImageButton
+                android:layout_width="@dimen/diameter"
+                android:layout_height="@dimen/diameter"
+                android:src="@drawable/rules"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:padding="2dp"
+                android:onClick="onClickRules"/>
+
+            <ImageButton
+                android:layout_width="@dimen/diameter"
+                android:layout_height="@dimen/diameter"
+                android:src="@drawable/information"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:padding="2dp"
+                android:onClick="onClickInfo"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

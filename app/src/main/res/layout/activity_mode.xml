@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".EasyMode"
+    android:id="@+id/mode">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <ImageButton
+            android:layout_width="@dimen/diameter"
+            android:layout_height="@dimen/diameter"
+            android:src="@drawable/restart"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:padding="2dp"
+            android:onClick="restart"/>
+
+        <ImageButton
+            android:layout_width="@dimen/diameter"
+            android:layout_height="@dimen/diameter"
+            android:src="@drawable/close"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:padding="2dp"
+            android:onClick="close"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/name_game_in_mode"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/name_game"/>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="15dp">
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="5dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:background="@drawable/btn"
+            android:text="-"
+            android:textColor="@color/color"
+            android:textStyle="bold"
+            android:textSize="@dimen/size"
+            android:onClick="minus"/>
+
+        <EditText
+            android:id="@+id/enter"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:inputType="number"
+            android:textColor="@color/bgbtn"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@null"
+            android:cursorVisible="false"/>
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:background="@drawable/btn"
+            android:text="+"
+            android:textColor="@color/color"
+            android:textStyle="bold"
+            android:textSize="@dimen/size"
+            android:onClick="plus"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/big_btn"
+        android:textColor="@color/color"
+        android:text="OK"
+        android:textSize="@dimen/text"
+        android:layout_marginVertical="5dp"
+        android:onClick="apply"/>
+
+</LinearLayout>

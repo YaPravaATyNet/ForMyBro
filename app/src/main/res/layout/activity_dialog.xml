@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".EasyMode">
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:fontFamily="@font/impact_regular"
+        android:padding="5dp"
+        android:textSize="@dimen/text"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_restart"
+            android:layout_width="@dimen/diameter"
+            android:layout_height="@dimen/diameter"
+            android:src="@drawable/restart"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:padding="2dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/diameter"
+            android:layout_height="@dimen/diameter"
+            android:src="@drawable/close"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:padding="2dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>

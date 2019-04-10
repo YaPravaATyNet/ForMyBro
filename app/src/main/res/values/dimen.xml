@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height">90dp</dimen>
+    <dimen name="width">200dp</dimen>
+    <dimen name="size">25sp</dimen>
+    <dimen name="diameter">50dp</dimen>
+    <dimen name="text">20sp</dimen>
+    <dimen name="marg">15dp</dimen>
+    <dimen name="digit">10sp</dimen>
+</resources>

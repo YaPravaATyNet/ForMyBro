@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="60dp"
+        android:width="60dp"
+        android:gravity="center">
+        <shape>
+            <solid android:color="@color/bgbtn"/>
+            <corners android:radius="5dp"/>
+            <stroke
+                android:width="5dp"
+                android:color="#77FF0088"/>
+        </shape>
+    </item>
+</layer-list>
