@@ -54,7 +54,7 @@ public class EasyMode extends Mode implements Runnable {
         writeBtns(currentHeap);
         btns[currentHeap].setBackgroundResource(R.drawable.heap);
         if (isEnd()) {
-            createDialog("Боюсь, вы проиграли");
+            createDialog("Боюсь, вы проиграли ");
         }
     }
 }
