@@ -209,7 +209,7 @@ public abstract class Mode extends AppCompatActivity {
         writeBtns(btnOn );
         btns[btnOn].setChecked(false);
         if (isEnd()) {
-            createDialog("ХОРОШО, ХОРОШО, ВЫ ВЫИГРАЛИ!");
+            createDialog("Хорошо, хорошо, вы выиграли!");
         }
         else {
             computerRun();

@@ -18,13 +18,20 @@
         android:padding="2dp"
         android:onClick="close"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="@string/rules"
-        android:textColor="#000000"
-        android:fontFamily="@font/impact_regular"
-        android:padding="10dp"
-        android:textSize="@dimen/text"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rules"
+            android:textColor="#000000"
+            android:fontFamily="@font/impact_regular"
+            android:padding="10dp"
+            android:textSize="@dimen/text"/>
+
+
+    </ScrollView>
 
 </LinearLayout>

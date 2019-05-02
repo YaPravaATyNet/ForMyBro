@@ -59,7 +59,7 @@ public class HardMode extends Mode implements Runnable{
         writeBtns(currentHeap);
         btns[currentHeap].setBackgroundResource(R.drawable.heap);
         if (isEnd()) {
-            createDialog("Боюсь вы крали");
+            createDialog("Боюсь, вы проиграли");
         }
     }
 }
