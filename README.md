@@ -21,5 +21,5 @@ The game has three difficulty levels.
         
 You can also adjust the number of piles and the maximum number of stones in each pile in the settings menu.
 
-![main screen](screenshots/screenshot.jpg)
-![field screen](screenshots/screenshot_field.jpg)
+<img src="screenshots/screenshot.jpg" width="250">
+<img src="screenshots/screenshot_field.jpg" width="250">
